@@ -2,7 +2,9 @@ let express = require('express');
 let app = express();
 
 app.get("/", (req, res) => {
-    res.send('/views/index.html')
+    let path = __dirname + './views/index.html'
+
+    res.send(path)
 });
 
 console.log('Hello World')
